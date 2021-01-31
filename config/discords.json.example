@@ -1,0 +1,49 @@
+{
+  "Servers": [{
+      "name": "Tallahassee",
+      "id": "266738315380785152",
+      "geojson_file": "tallahassee.json",
+      "language": "en",
+      "donor_role": "277658037982986240",
+      "command_channels": ["492517376177471488"],
+      "spam_channels": [],
+      "ignored_channels": [],
+      "purge_channels": "ENABLED",
+      "channels_to_purge": ["537460180451983371","537460213956214785","522251205334794260"],
+      "min_raid_lobbies": "3",
+      "raid_lobbies_category_id": "",
+      "raid_role": "551467095293165591",
+      "ex_lobbies": "680827785975300114",
+      "ex_lobbies_role": "680907411829424168",
+      "geofence": [
+        [
+          [-84.726558,30.7823],
+          [-84.060242,30.771741],
+          [-84.03284,30.078181],
+          [-84.690204,30.061413],
+          [-84.726558,30.7823]
+        ]
+      ]
+    },
+    {
+      "name": "Test",
+      "id": "420902528641662976",
+      "command_channels": "527865177144819732",
+      "donor_role": "",
+      "purge_channels": "DISABLED",
+      "channels_to_purge": [],
+      "min_raid_lobbies": "0",
+      "raid_lobbies_category_id": "",
+      "raid_role": "",
+      "geofence": [
+        [
+          [ -37.366390228271484, 31.271948634919863 ],
+          [ -37.25996017456055, 31.271948634919863 ],
+          [ -37.25996017456055, 31.352610777701113 ],
+          [ -37.366390228271484, 31.352610777701113 ],
+          [ -37.366390228271484, 31.271948634919863 ]
+        ]
+      ]
+    }
+  ]
+}
