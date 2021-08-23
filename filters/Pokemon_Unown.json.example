@@ -1,0 +1,20 @@
+{
+	"Type": "pokemon",
+
+	"Post_Without_IV": "both",
+
+	"min_iv": 0,
+	"max_iv": 100,
+
+	"min_level": 0,
+	"max_level": 35,
+
+	"min_cp": 0,
+	"max_cp": 10000,
+
+	"gender": "All",
+
+  "size": "All",
+
+	"Unown": true,
+}
