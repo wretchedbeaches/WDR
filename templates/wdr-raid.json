@@ -1,0 +1,82 @@
+{
+    "style": "klokantech-basic",
+    "latitude": #(lat),
+    "longitude": #(lon),
+    "zoom": 15,
+    "width": 400,
+    "height": 220,
+    "scale": 2,
+    "markers": [
+	#if(gyms != nil):
+	#for(pg in gyms):
+	#if(index(pg, 2) == 0):
+	{
+	    "url": "https://raw.githubusercontent.com/whitewillem/PMSF/develop/static/forts/shield/Uncontested.png",
+	    "latitude": #index(pg, 0),
+            "longitude": #index(pg, 1),
+            "width": 20,
+            "height": 20,
+            "y_offset": -8
+        },
+	#endif
+	#if(index(pg, 2) == 1):
+	{
+	    "url": "https://raw.githubusercontent.com/whitewillem/PMSF/develop/static/forts/shield/Mystic.png",
+	    "latitude": #index(pg, 0),
+	    "longitude": #index(pg, 1),
+	    "width": 20,
+	    "height": 20,
+	    "y_offset": -8
+	},
+	#endif
+	#if(index(pg, 2) == 2):
+	{
+	    "url": "https://raw.githubusercontent.com/whitewillem/PMSF/develop/static/forts/shield/Valor.png",
+	    "latitude": #index(pg, 0),
+	    "longitude": #index(pg, 1),
+	    "width": 20,
+	    "height": 20,
+	    "y_offset": -8
+	},
+	#endif
+	#if(index(pg, 2) == 3):
+	{
+	    "url": "https://raw.githubusercontent.com/whitewillem/PMSF/develop/static/forts/shield/Instinct.png",
+	    "latitude": #index(pg, 0),
+	    "longitude": #index(pg, 1),
+	    "width": 20,
+	    "height": 20,
+	    "y_offset": -8
+	},
+	#endif
+	#endfor
+	#endif
+	#if(stops != nil):
+	#for(ps in stops):
+        {
+            "url": "https://raw.githubusercontent.com/whitewillem/PMSF/develop/static/forts/Pstop.png",
+            "latitude": #index(ps,0),
+            "longitude": #index(ps,1),
+            "width": 20,
+            "height": 20,
+	    "y_offset": -8
+        },
+	#endfor
+	#endif
+        {
+            "url": "#(url)",
+            "latitude": #(lat),
+            "longitude": #(lon),
+            "width": 40,
+            "height": 40,
+	    "y_offset": -25
+        },
+        {
+	    "url": "#(url2)",
+	    "latitude": #(lat),
+	    "longitude": #(lon),
+	    "width": 40,
+            "height": 40
+	}
+    ]
+}
